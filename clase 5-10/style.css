@@ -1,0 +1,14 @@
+.box-parent{
+    display: flex;
+    border: 2px red solid;
+    height: 300px;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+.box-parent__children{
+    border: 2px blue solid;
+    height: 80px;
+    width: 50px;
+    margin: 10px 20px 15px;
+}

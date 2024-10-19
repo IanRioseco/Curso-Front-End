@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a23;
+    color: white;
+}
+
+/* HEADER */
+.header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #171717;
+}
+.header p{
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+.header_logo img {
+    height: 60px;
+    border-radius: 50px;
+}
+.header_menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    border: 3px solid #9c27b0;
+    text-decoration: uppercase;
+    background: #9c27b0;
+    text-align: center;
+}
+
+/* MENU */
+.menu a:hover {
+    background: none;
+}
+
+/* TITULO */
+.titulo {
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;        
+    text-align: center;         
+    padding: 40px 20px;         
+}
+.titulo h1, .titulo p {
+    max-width: 90%;
+    margin: 20px 0;             /* Limita el ancho del texto para que no se desborde en pantallas pequeñas */
+}
+
+.titulo p{
+    margin: 20px 0;
+}
+
+
+/* PILARES */
+.pilares {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #171717;
+    justify-content: center;
+    align-items: center;
+}
+.pilares_pilar {
+    max-width: 100%;
+    text-align: center;
+    height: 15rem;
+    width: 30rem;
+    background: #101010;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgb(0, 0 , 0, .5);
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+
+}
+.pilares .pilares_pilar h3{
+    color: #9c27b0;
+    justify-content: center;
+    text-align: center;
+}
+.pilares .pilares_pilar p{
+    justify-content: center;
+    text-align: center;
+}
+.pilares .pilares_pilar i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #9c27b0;
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+    
+}
+
+/* FOOTER */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #171717;
+    color: white;
+}
+
+/* SLIDER */
+.slider-frame {
+	width: 100%;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+.slider-frame img {
+	width: 100%;
+}
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* ajuste de menu para pantallas pequeñas */
+@media (max-width: 768px) {
+    .header__menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .header__menu a {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/* ajuste de pilares */
+@media (max-width: 768px) {
+    .pilares {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .pilares_pilar {
+        width: 90%;
+        margin-bottom: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+/*ajuste de imagenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ajuste de slider */
+@media (max-width: 768px) {
+    .slider-frame {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-frame ul {
+        width: 400%;
+        /* Cambia la animación si es necesario para pantallas más pequeñas */
+    }
+}
+
+/* tipografias responsivas */
+@media (max-width: 768px) {
+    .titulo h1 {
+        font-size: 1.5rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titulo p {
+        font-size: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* ajuste de footer */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ajuste general */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contenedor-principal {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* ajsute de titulos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .titulo h1 {
+        font-size: 1.2rem; /* Ajustar aún más en pantallas muy pequeñas */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titulo p {
+        font-size: 0.8rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .pilares_pilar h3 {
+        font-size: 1.5rem; /* Ajustar aún más en pantallas muy pequeñas */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .pilares_pilar p {
+        font-size: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
