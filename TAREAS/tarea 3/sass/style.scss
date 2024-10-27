@@ -1,0 +1,8 @@
+@use '_reset';            // Importar reset CSS
+@use '_header';
+@use '_main-content';
+@use '_footer';
+@use '_media';            // Importar media queries si decidiste hacer un archivo separado.
+
+
+
