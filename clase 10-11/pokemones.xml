@@ -1,0 +1,22 @@
+<pokemons>
+    <pokemon>
+        <nombre>bulbasaur</nombre>
+        <ataque>49</ataque>
+        <defensa>49</defensa>
+        <tipo>grass</tipo>
+    </pokemon>
+    
+    <pokemon>
+        <nombre>charmander</nombre>
+        <ataque>52</ataque>
+        <defensa>43</defensa>
+        <tipo>fire</tipo>
+    </pokemon>
+
+    <pokemon>
+        <nombre>squirtle</nombre>
+        <ataque>48</ataque>
+        <defensa>65</defensa>
+        <tipo>water</tipo>
+    </pokemon>
+</pokemons>
